@@ -20,7 +20,11 @@ function displayCars(cars) {
   img.alt = cars.Model;
   img.style.height = "115px";
   img.style.width = "200px";
-  carList.append(img);
+
+  const name = document.createElement("div");
+  name.innerText = cars.model;
+
+  carList.append(img, name);
 
   img.addEventListener("click", () => {
     const show = document.getElementById("action-window");
