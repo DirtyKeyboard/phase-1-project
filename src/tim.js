@@ -4,7 +4,6 @@ function fetchCars() {
       return resp.json();
     })
     .then((data) => {
-      console.log(data);
       data.forEach((cars) => {
         displayCars(cars);
       });
@@ -16,8 +15,8 @@ fetchCars();
 function displayCars(cars) {
   const carList = document.querySelector("h2");
   const img = document.createElement("img");
-  img.src = cars.Img;
-  img.alt = cars.Model;
+  img.src = cars.img;
+  img.alt = cars.model;
   img.style.height = "115px";
   img.style.width = "200px";
 
@@ -30,15 +29,15 @@ function displayCars(cars) {
     const show = document.getElementById("action-window");
     show.innerText = "";
     const carImg = document.createElement("img");
-    carImg.src = cars.Img;
-    carImg.alt = cars.Model;
+    carImg.src = cars.img;
+    carImg.alt = cars.model;
 
     const car = document.createElement("div");
-    car.innerText = cars.Year + " " + cars.Make + " " + cars.Model;
+    car.innerText = cars.year + " " + cars.make + " " + cars.model;
 
-    // const details = document.createElement("p")
-    // details.innerText = cars.info
+    const details = document.createElement("p");
+    details.innerText = cars.details;
 
-    show.append(carImg, car);
+    show.append(carImg, car, details);
   });
 }
