@@ -52,4 +52,12 @@ function addYourOwnCar(e)
       const imgIn = document.createElement('input')
       const numIn = document.createElement('input')
       const detailsIn = document.createElement('input')
+
+      h.textContent = "Sell Your Car!"
+      yearIn.type = 'number'
+      makeIn.type = 'text'
+      modelIn.type = 'text'
+      imgIn.type = 'text'
+      numIn.type = 'text'
+      detailsIn.type = 'text'
 }
