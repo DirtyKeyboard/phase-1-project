@@ -1,4 +1,5 @@
 const show = document.getElementById("action-window");
+const carList = document.getElementById("car-list");
 
 function fetchCars() {
   fetch("http://localhost:3000/CARS")
@@ -15,7 +16,7 @@ function fetchCars() {
 fetchCars();
 
 function displayCars(cars) {
-  const carList = document.querySelector("h2");
+  
   const img = document.createElement("img");
   img.src = cars.img;
   img.alt = cars.model;
@@ -149,3 +150,26 @@ function showForm(e) {
   );
   show.append(form);
 }
+
+
+const filter = document.querySelector("button.fr")
+filter.addEventListener('click', (e) => 
+{
+    if (filter.textContent === 'Show Sold Cars')
+    {
+        filter.textContent = 'Show All Cars'
+        //document.querySelector('h2').textContent = 'Car List: Sold'
+        carList.innerHTML = "<h2>Car List: Sold</h2>";
+        fetch('http://localhost:3000/CARS').then(resp => resp.json()).then(data => data.forEach(el => {
+          if (el.sold)
+            displayCars(el)
+        }))
+    }
+    else
+    {
+      carList.innerHTML = "<h2>Car List: All</h2>";
+      filter.textContent = 'Show Sold Cars'
+      //document.querySelector('h2').textContent = 'Car List: All'
+      fetch('http://localhost:3000/CARS').then(resp => resp.json()).then(el => el.forEach(displayCars))
+    }
+})

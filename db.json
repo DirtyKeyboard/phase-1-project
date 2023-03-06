@@ -8,7 +8,7 @@
       "img": "https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/2020-Chevrolet-Corvette-Stingray/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=960",
       "details": "Looking to own a beautiful new Vette?  Want to zoom by everyone and look good while doing it?  If so, this is the perfect car for you.  With 490hp and 465tq, its the perfect power for this light, luxurious, sports car.",
       "contact": "Jack, 818-111-0000",
-      "sold": false
+      "sold": true
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
       "img": "https://cdn.motor1.com/images/mgl/PKZQL/s3/1997-toyota-supra-sold-for-176-000-at-auction.webp",
       "details": "King of imports, mint low miles, all stock.  320hp and 280tq.  One of the best imports of its time.",
       "contact": "Billy, 682-333-0202",
-      "sold": false
+      "sold": true
     },
     {
       "id": 3,
@@ -28,7 +28,7 @@
       "img": "https://www.supercars.net/blog/wp-content/uploads/2016/02/NISSAN-Skyline-GT-R-V-Spec-R34-4041_13-1400x1050.jpg",
       "details": "GODZILLA!!!!!  530hp, 515tq.  Too many mods to list, contact if interested.",
       "contact": "Ashley, 555-111-1234",
-      "sold": false
+      "sold": true
     },
     {
       "id": 4,
