@@ -13,7 +13,7 @@
     margin-right:400px;
     float:right;
 }
-
+/*
 .DivToScroll{
     background-color: #F5F5F5;
     border: 1px solid #DDDDDD;
@@ -30,11 +30,16 @@
     overflow:scroll;
     overflow-x:hidden;
 }
-
-#main
+*/
+.parent
 {
-    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
+
 
 #car-list
 {
@@ -43,12 +48,4 @@
     flex-direction: column;
     display:flex;
     align-items: left;
-}
-
-#action-window
-{
-    flex:1;
-  padding: 10px;
-  text-align: center;
-  /*display:inline-block;*/
 }
