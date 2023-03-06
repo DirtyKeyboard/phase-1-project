@@ -46,13 +46,25 @@ function displayCars(cars) {
     const br = document.createElement("br");
 
     const buy = document.createElement("button");
+    buy.dataset.id = cars.id
     if (cars.sold) {
       buy.innerText = "Sold!";
       buy.disabled = true;
     } else {
       buy.innerText = "Buy!";
     }
-    // buy.addEventListener("click", () => {});
+    buy.addEventListener("click", (e) => {
+      //set cars.sold = true
+      fetch(`http://localhost:3000/CARS/${e.target.dataset.id}`, {
+        method: 'PATCH', 
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({"sold": true})
+      }).then(() => {
+        buy.disabled = true;
+        buy.innerText = "Sold!";
+      })
+
+    });
 
     show.append(carImg, car, details, seller, br, buy);
   });
@@ -123,13 +135,15 @@ function showForm(e) {
       contact: contactIn.value,
       sold: false,
     };
-    console.log(newCarObject);
     show.innerHTML = "";
     fetch("http://localhost:3000/CARS/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newCarObject),
-    }).then(() => displayCars(newCarObject));
+    }).then(resp => resp.json()).then(returnedCar => {
+      console.log(returnedCar)
+      displayCars(returnedCar)
+    })
     form.reset();
   });
   form.append(
@@ -157,6 +171,7 @@ filter.addEventListener('click', (e) =>
 {
     if (filter.textContent === 'Show Sold Cars')
     {
+        show.innerHTML = "";
         filter.textContent = 'Show All Cars'
         //document.querySelector('h2').textContent = 'Car List: Sold'
         carList.innerHTML = "<h2>Car List: Sold</h2>";
@@ -167,6 +182,7 @@ filter.addEventListener('click', (e) =>
     }
     else
     {
+      show.innerHTML = "";
       carList.innerHTML = "<h2>Car List: All</h2>";
       filter.textContent = 'Show Sold Cars'
       //document.querySelector('h2').textContent = 'Car List: All'
