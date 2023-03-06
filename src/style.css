@@ -77,6 +77,16 @@
     margin-left: 160px;
   }
 
+<<<<<<< HEAD
   
   
   
+=======
+  .scroller {
+    width: 200px;
+    height: 800px;
+    overflow-y: scroll;
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+  }
+>>>>>>> origin/main
