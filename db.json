@@ -21,56 +21,64 @@
       "Year": 2002,
       "Make": "Nissan",
       "Model": "Skyline",
-      "Img": "https://www.supercars.net/blog/wp-content/uploads/2016/02/NISSAN-Skyline-GT-R-V-Spec-R34-4041_13-1400x1050.jpg"
+      "Img": "https://www.supercars.net/blog/wp-content/uploads/2016/02/NISSAN-Skyline-GT-R-V-Spec-R34-4041_13-1400x1050.jpg",
+      "details": "GODZILLA!!!!!  530hp, 515tq.  Too many mods to list, contact if interested."
     },
     {
       "Id": 4,
       "Year": 1993,
       "Make": "Mazda",
       "Model": "RX-7",
-      "Img": "https://www.jdmbuysell.com/wp-content/uploads/2020/05/Mazda-RX-7.jpg"
+      "Img": "https://www.jdmbuysell.com/wp-content/uploads/2020/05/Mazda-RX-7.jpg",
+      "details": "Look fresh while cruising.  Stock motor but lowered on coils and sitting on TE37 wheels"
     },
     {
       "Id": 5,
       "Year": 2021,
       "Make": "Ford",
       "Model": "Mustang Shelby",
-      "Img": "https://www.topgear.com/sites/default/files/images/cars-road-test/carousel/2021/05/e6bb823415c7f730dacfb97fd2407df9/topgear_-_shelby_gt500-_002.jpg?w=976&h=549"
+      "Img": "https://www.topgear.com/sites/default/files/images/cars-road-test/carousel/2021/05/e6bb823415c7f730dacfb97fd2407df9/topgear_-_shelby_gt500-_002.jpg?w=976&h=549",
+      "details": "Best bang for buck, 760hp, 625tq.  You'll be able to blow by anyone in this car."
     },
     {
       "Id": 6,
       "Year": 2023,
       "Make": "Dodge",
       "Model": "Challenger SRT",
-      "Img": "https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/2020-Chevrolet-Corvette-Stingray/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=960"
+      "Img": "https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/2020-Chevrolet-Corvette-Stingray/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=960",
+      "details": "POWER!!!!!!  V8 almost 800hp!!!!"
     },
     {
       "Id": 7,
       "Year": 2021,
       "Make": "Honda",
       "Model": "Civic Type-R",
-      "Img": "https://di-uploads-pod16.dealerinspire.com/balisehondaofwestwarwick/uploads/2021/03/civic-type-r-ext.png"
+      "Img": "https://di-uploads-pod16.dealerinspire.com/balisehondaofwestwarwick/uploads/2021/03/civic-type-r-ext.png",
+      "details": "Speedy, quick, great handler.  30+ MPG for long distance, racing seats, 6spd manual.  Contact for details."
     },
     {
       "Id": 8,
       "Year": 2022,
       "Make": "BMW",
       "Model": "M4",
-      "Img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cobb-3movie-180221-1184-1615300284.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*"
+      "Img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cobb-3movie-180221-1184-1615300284.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*",
+      "details": "Germany automotive.  Smiles per Gallon"
     },
     {
       "Id": 9,
       "Year": 2017,
       "Make": "Dodge",
       "Model": "Viper",
-      "Img": "https://robbreport.com/wp-content/uploads/2021/01/viper01.jpg?w=1000"
+      "Img": "https://robbreport.com/wp-content/uploads/2021/01/viper01.jpg?w=1000",
+      "details": "One of the greatest american cars made.  Looks amazing, sounds beastly, and a gem."
     },
     {
       "Id": 10,
       "Year": 2023,
       "Make": "Toyota",
       "Model": "Prius",
-      "Img": "https://hips.hearstapps.com/hmg-prod/images/2023-toyota-prius-japan-front-three-quarters-1668576156.jpg?crop=1xw:1xh;center,top&resize=980:*"
+      "Img": "https://hips.hearstapps.com/hmg-prod/images/2023-toyota-prius-japan-front-three-quarters-1668576156.jpg?crop=1xw:1xh;center,top&resize=980:*",
+      "details": "You will never have to worry about how far you can go ever again.  Best car ever!!!!!"
     }
   ]
 }
