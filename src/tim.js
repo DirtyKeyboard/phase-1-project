@@ -18,9 +18,23 @@ function displayCars(cars) {
   const img = document.createElement("img");
   img.src = cars.Img;
   img.alt = cars.Model;
-  img.style.height = "125px";
-  img.style.width = "125px";
+  img.style.height = "115px";
+  img.style.width = "200px";
   carList.append(img);
 
-  img.addEventListener("click", () => {});
+  img.addEventListener("click", () => {
+    const show = document.getElementById("action-window");
+    show.innerText = "";
+    const carImg = document.createElement("img");
+    carImg.src = cars.Img;
+    carImg.alt = cars.Model;
+
+    const car = document.createElement("div");
+    car.innerText = cars.Year + " " + cars.Make + " " + cars.Model;
+
+    // const details = document.createElement("p")
+    // details.innerText = cars.info
+
+    show.append(carImg, car);
+  });
 }
