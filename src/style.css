@@ -13,3 +13,42 @@
     margin-right:400px;
     float:right;
 }
+
+.DivToScroll{
+    background-color: #F5F5F5;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 0 4px 0;
+    color: #3B3C3E;
+    font-size: 12px;
+    font-weight: bold;
+    left: -1px;
+    padding: 10px 7px 5px;
+}
+
+.DivWithScroll{
+    height:120px;
+    overflow:scroll;
+    overflow-x:hidden;
+}
+
+#main
+{
+    
+}
+
+#car-list
+{
+    padding: 10px;
+    flex: 1;
+    flex-direction: column;
+    display:flex;
+    align-items: left;
+}
+
+#action-window
+{
+    flex:1;
+  padding: 10px;
+  text-align: center;
+  /*display:inline-block;*/
+}
