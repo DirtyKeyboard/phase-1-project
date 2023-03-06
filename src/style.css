@@ -1,5 +1,15 @@
-#header
+.ctr
 {
     text-align: center;
     margin: block;
+}
+
+.fl {
+    margin-left: 400px;
+    float:left;
+}
+
+.fr {
+    margin-right:400px;
+    float:right;
 }
