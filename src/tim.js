@@ -38,6 +38,9 @@ function displayCars(cars) {
     const details = document.createElement("p");
     details.innerText = cars.details;
 
-    show.append(carImg, car, details);
+    const seller = document.createElement("span");
+    seller.innerText = cars.contact;
+
+    show.append(carImg, car, details, seller);
   });
 }
