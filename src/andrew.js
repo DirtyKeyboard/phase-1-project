@@ -14,3 +14,11 @@ darkModeBtn.addEventListener('click', (e) =>
         //enable light mode
     }
 })
+
+const sellCarBtn = document.querySelector('button.fl')
+sellCarBtn.addEventListener('click', addYourOwnCar)
+
+function addYourOwnCar(e)
+{
+    
+}
