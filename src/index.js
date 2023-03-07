@@ -72,7 +72,7 @@ function displayCars(cars) {
   });
 }
 
-const sellCarBtn = document.querySelector("button.fl");
+const sellCarBtn = document.querySelector("button#sellb");
 sellCarBtn.addEventListener("click", showForm);
 
 function showForm(e) {

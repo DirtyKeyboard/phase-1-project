@@ -26,11 +26,6 @@ img {
   }
 }
 
-.fl {
-  margin-left: 1500px;
-  float: left;
-}
-
 #car-list {
   padding: 50px;
   flex: 1;
