@@ -1,5 +1,6 @@
 const show = document.getElementById("action-window");
 const carList = document.getElementById("car-list");
+let isFiltering = false;
 
 function fetchCars() {
   fetch("http://localhost:3000/CARS")
@@ -47,6 +48,7 @@ function displayCars(cars) {
 
     const buy = document.createElement("button");
     buy.dataset.id = cars.id
+
     if (cars.sold) {
       buy.innerText = "Sold!";
       buy.disabled = true;
@@ -92,13 +94,6 @@ function showForm(e) {
   const labelDetails = document.createElement("label");
   const br = document.createElement("br");
   const submitBtn = document.createElement("input");
-
-  labelYear.for = "new-year";
-  labelMake.for = "new-make";
-  labelModel.for = "new-model";
-  labelImg.for = "new-image";
-  labelContact.for = "new-contact";
-  labelDetails.for = "new-details";
 
   labelYear.textContent = "Year: ";
   labelMake.textContent = "Make: ";
@@ -166,13 +161,15 @@ function showForm(e) {
 }
 
 
-const filter = document.querySelector("button.fr")
+const filter = document.getElementById('filterb')
 filter.addEventListener('click', (e) => 
 {
-    if (filter.textContent === 'Show Sold Cars')
+    if (!isFiltering)
     {
+        isFiltering = true;
+        filter.innerText = "Filter Sold: ON"
         show.innerHTML = "";
-        filter.textContent = 'Show All Cars'
+        //filter.textContent = 'Show All Cars'
         //document.querySelector('h2').textContent = 'Car List: Sold'
         carList.innerHTML = "<h2>Car List: Sold</h2>";
         fetch('http://localhost:3000/CARS').then(resp => resp.json()).then(data => data.forEach(el => {
@@ -182,9 +179,11 @@ filter.addEventListener('click', (e) =>
     }
     else
     {
+      isFiltering = false;
+      filter.innerText = "Filter Sold: OFF"
       show.innerHTML = "";
       carList.innerHTML = "<h2>Car List: All</h2>";
-      filter.textContent = 'Show Sold Cars'
+      //filter.textContent = 'Show Sold Cars'
       //document.querySelector('h2').textContent = 'Car List: All'
       fetch('http://localhost:3000/CARS').then(resp => resp.json()).then(el => el.forEach(displayCars))
     }

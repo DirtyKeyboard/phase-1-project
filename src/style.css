@@ -1,36 +1,4 @@
-.ctr
-{
-    text-align: center;
-    margin: block;
-}
-
-.fl {
-    margin-left: 400px;
-    float:left;
-}
-
-.fr {
-    margin-right:400px;
-    float:right;
-}
 /*
-.DivToScroll{
-    background-color: #F5F5F5;
-    border: 1px solid #DDDDDD;
-    border-radius: 4px 0 4px 0;
-    color: #3B3C3E;
-    font-size: 12px;
-    font-weight: bold;
-    left: -1px;
-    padding: 10px 7px 5px;
-}
-
-.DivWithScroll{
-    height:120px;
-    overflow:scroll;
-    overflow-x:hidden;
-}
-*/
 .parent
 {
     display: grid;
@@ -39,7 +7,18 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
+*/
 
+.ctr
+{
+    text-align: center;
+    margin: block;
+}
+
+.fl {
+    margin-left: 1500px;
+    float:left;
+}
 
 #car-list
 {
@@ -73,7 +52,6 @@
 
   #action-window {
     margin-top: 70px;
-    padding: 75px;
     margin-left: 160px;
   }
 
@@ -83,4 +61,69 @@
     overflow-y: scroll;
     scrollbar-color: rebeccapurple green;
     scrollbar-width: thin;
+  }
+
+  input[type="submit"] {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+   }
+   
+   input[type="submit"]:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+   }
+   
+   @keyframes pulse512 {
+    0% {
+     box-shadow: 0 0 0 0 #05bada66;
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+   
+    100% {
+     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+   }
+
+  button {
+    width: fit-content;
+    min-width: 100px;
+    height: 45px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2.5px solid #E0E1E4;
+    box-shadow: 0px 0px 20px -20px;
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.2s ease-in-out 0ms;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  button:hover {
+    background-color: #F2F2F2;
+    box-shadow: 0px 0px 20px -18px;
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+
+  button:disabled:active {
+    transform: scale(1);
+  }
+
+  button:disabled:hover {
+    background-color: white;
+    box-shadow: 0px 0px 20px -20px;
   }
