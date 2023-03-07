@@ -9,6 +9,10 @@
 }
 */
 
+img {
+  width: 750px;
+  height: auto;
+}
 .ctr
 {
     text-align: center;
