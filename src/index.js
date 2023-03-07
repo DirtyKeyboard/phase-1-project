@@ -56,7 +56,6 @@ function displayCars(cars) {
       buy.innerText = "Buy!";
     }
     buy.addEventListener("click", (e) => {
-      //set cars.sold = true
       fetch(`http://localhost:3000/CARS/${e.target.dataset.id}`, {
         method: 'PATCH', 
         headers: {'Content-Type': 'application/json'},
@@ -121,7 +120,6 @@ function showForm(e) {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     const newCarObject = {
-      //year, make, model, img, details, contact
       year: yearIn.value,
       make: makeIn.value,
       model: modelIn.value,
@@ -169,8 +167,6 @@ filter.addEventListener('click', (e) =>
         isFiltering = true;
         filter.innerText = "Filter Sold: ON"
         show.innerHTML = "";
-        //filter.textContent = 'Show All Cars'
-        //document.querySelector('h2').textContent = 'Car List: Sold'
         carList.innerHTML = "<h2>Car List: Sold</h2>";
         fetch('http://localhost:3000/CARS').then(resp => resp.json()).then(data => data.forEach(el => {
           if (el.sold)
@@ -183,8 +179,6 @@ filter.addEventListener('click', (e) =>
       filter.innerText = "Filter Sold: OFF"
       show.innerHTML = "";
       carList.innerHTML = "<h2>Car List: All</h2>";
-      //filter.textContent = 'Show Sold Cars'
-      //document.querySelector('h2').textContent = 'Car List: All'
       fetch('http://localhost:3000/CARS').then(resp => resp.json()).then(el => el.forEach(displayCars))
     }
 })
