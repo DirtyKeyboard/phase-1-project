@@ -61,6 +61,7 @@ img {
 #action-window {
   margin-top: 70px;
   margin-left: 160px;
+  color: white;
 }
 
 .scroller {
@@ -134,4 +135,11 @@ button:disabled:active {
 button:disabled:hover {
   background-color: white;
   box-shadow: 0px 0px 20px -20px;
+}
+
+form {
+  color: rgb(247, 242, 242);
+  font-size: 3vh;
+  font-style: bold;
+  text-align: center;
 }
