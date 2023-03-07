@@ -1,5 +1,6 @@
 const show = document.getElementById("action-window");
 const carList = document.getElementById("car-list");
+
 let isFiltering = false;
 
 function fetchCars() {
@@ -84,14 +85,13 @@ function showForm(e) {
   const imgIn = document.createElement("input");
   const contactIn = document.createElement("input");
   const detailsIn = document.createElement("input");
-
+  const br = document.createElement("br");
   const labelYear = document.createElement("label");
   const labelMake = document.createElement("label");
   const labelModel = document.createElement("label");
   const labelImg = document.createElement("label");
   const labelContact = document.createElement("label");
   const labelDetails = document.createElement("label");
-  const br = document.createElement("br");
   const submitBtn = document.createElement("input");
 
   labelYear.textContent = "Year: ";
@@ -117,6 +117,8 @@ function showForm(e) {
   imgIn.classList.add("new-image");
   contactIn.classList.add("new-contact");
   detailsIn.classList.add("new-details");
+
+
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     const newCarObject = {
@@ -142,17 +144,28 @@ function showForm(e) {
   form.append(
     labelYear,
     yearIn,
+    document.createElement('br'),
+    document.createElement('br'),
     labelMake,
     makeIn,
+    document.createElement('br'),
+    document.createElement('br'),
     labelModel,
     modelIn,
+    document.createElement('br'),
+    document.createElement('br'),
     labelImg,
     imgIn,
+    document.createElement('br'),
+    document.createElement('br'),
     labelContact,
     contactIn,
-    br,
+    document.createElement('br'),
+    document.createElement('br'),
     labelDetails,
     detailsIn,
+    document.createElement('br'),
+    document.createElement('br'),
     submitBtn
   );
   show.append(form);
