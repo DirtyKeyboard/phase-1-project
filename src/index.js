@@ -1,4 +1,5 @@
 const show = document.getElementById("action-window");
+const submit = document.getElementById("submit");
 const carList = document.getElementById("car-list");
 
 let isFiltering = false;
@@ -18,7 +19,6 @@ function fetchCars() {
 fetchCars();
 
 function displayCars(cars) {
-  
   const img = document.createElement("img");
   img.src = cars.img;
   img.alt = cars.model;
@@ -42,13 +42,15 @@ function displayCars(cars) {
     const details = document.createElement("p");
     details.innerText = cars.details;
 
+    const br1 = document.createElement("br");
+
     const seller = document.createElement("span");
     seller.innerText = cars.contact;
 
-    const br = document.createElement("br");
+    const br2 = document.createElement("br");
 
     const buy = document.createElement("button");
-    buy.dataset.id = cars.id
+    buy.dataset.id = cars.id;
 
     if (cars.sold) {
       buy.innerText = "Sold!";
@@ -58,17 +60,16 @@ function displayCars(cars) {
     }
     buy.addEventListener("click", (e) => {
       fetch(`http://localhost:3000/CARS/${e.target.dataset.id}`, {
-        method: 'PATCH', 
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({"sold": true})
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ sold: true }),
       }).then(() => {
         buy.disabled = true;
         buy.innerText = "Sold!";
-      })
-
+      });
     });
 
-    show.append(carImg, car, details, seller, br, buy);
+    show.append(carImg, car, details, br1, seller, br2, buy);
   });
 }
 
@@ -76,7 +77,7 @@ const sellCarBtn = document.querySelector("button#sellb");
 sellCarBtn.addEventListener("click", showForm);
 
 function showForm(e) {
-  show.innerHTML = "";
+  submit.innerHTML = "";
   const form = document.createElement("form");
   const h = document.createElement("h3");
   const yearIn = document.createElement("input");
@@ -118,7 +119,6 @@ function showForm(e) {
   contactIn.classList.add("new-contact");
   detailsIn.classList.add("new-details");
 
-
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     const newCarObject = {
@@ -135,63 +135,65 @@ function showForm(e) {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newCarObject),
-    }).then(resp => resp.json()).then(returnedCar => {
-      console.log(returnedCar)
-      displayCars(returnedCar)
     })
+      .then((resp) => resp.json())
+      .then((returnedCar) => {
+        console.log(returnedCar);
+        displayCars(returnedCar);
+      });
     form.reset();
   });
   form.append(
     labelYear,
     yearIn,
-    document.createElement('br'),
-    document.createElement('br'),
+    document.createElement("br"),
+    document.createElement("br"),
     labelMake,
     makeIn,
-    document.createElement('br'),
-    document.createElement('br'),
+    document.createElement("br"),
+    document.createElement("br"),
     labelModel,
     modelIn,
-    document.createElement('br'),
-    document.createElement('br'),
+    document.createElement("br"),
+    document.createElement("br"),
     labelImg,
     imgIn,
-    document.createElement('br'),
-    document.createElement('br'),
+    document.createElement("br"),
+    document.createElement("br"),
     labelContact,
     contactIn,
-    document.createElement('br'),
-    document.createElement('br'),
+    document.createElement("br"),
+    document.createElement("br"),
     labelDetails,
     detailsIn,
-    document.createElement('br'),
-    document.createElement('br'),
+    document.createElement("br"),
+    document.createElement("br"),
     submitBtn
   );
-  show.append(form);
+  submit.append(form);
 }
 
-
-const filter = document.getElementById('filterb')
-filter.addEventListener('click', (e) => 
-{
-    if (!isFiltering)
-    {
-        isFiltering = true;
-        filter.innerText = "Filter Sold: ON"
-        show.innerHTML = "";
-        carList.innerHTML = "<h2>Car List: Sold</h2>";
-        fetch('http://localhost:3000/CARS').then(resp => resp.json()).then(data => data.forEach(el => {
-          if (el.sold)
-            displayCars(el)
-        }))
-    }
-    else
-    {
-      isFiltering = false;
-      filter.innerText = "Filter Sold: OFF"
-      show.innerHTML = "";
-      carList.innerHTML = "<h2>Car List: All</h2>";
-      fetch('http://localhost:3000/CARS').then(resp => resp.json()).then(el => el.forEach(displayCars))
-    }
-})
+const filter = document.getElementById("filterb");
+filter.addEventListener("click", (e) => {
+  if (!isFiltering) {
+    isFiltering = true;
+    filter.innerText = "Filter Sold: ON";
+    show.innerHTML = "";
+    carList.innerHTML = "<h2>Car List: Sold</h2>";
+    fetch("http://localhost:3000/CARS")
+      .then((resp) => resp.json())
+      .then((data) =>
+        data.forEach((el) => {
+          if (el.sold) displayCars(el);
+        })
+      );
+  } else {
+    isFiltering = false;
+    filter.innerText = "Filter Sold: OFF";
+    show.innerHTML = "";
+    carList.innerHTML = "<h2>Car List: All</h2>";
+    fetch("http://localhost:3000/CARS")
+      .then((resp) => resp.json())
+      .then((el) => el.forEach(displayCars));
+  }
+});
