@@ -37,6 +37,7 @@ function displayCars(cars) {
     carImg.alt = cars.model;
 
     const car = document.createElement("div");
+    car.classList.add("car-name");
     car.innerText = cars.year + " " + cars.make + " " + cars.model;
 
     const details = document.createElement("p");
@@ -45,6 +46,7 @@ function displayCars(cars) {
     const br1 = document.createElement("br");
 
     const seller = document.createElement("span");
+    seller.classList.add("seller-info");
     seller.innerText = cars.contact;
 
     const br2 = document.createElement("br");

@@ -61,7 +61,21 @@ img {
   /* background-color: rgba(0, 0, 0, 0.5)*/
 }
 
+.car-name {
+  display: inline-block;
+  font-size: 2.5vh;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 p {
+  display: inline-block;
+  font-size: 2.5vh;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.seller-info {
   display: inline-block;
   font-size: 2.5vh;
   color: white;
