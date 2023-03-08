@@ -166,10 +166,9 @@ form {
   font-size: 2vh;
   font-style: bold;
   text-align: right;
+  margin-right: 70px
 }
 
-
 #submit {
-  margin-top: 50px;
-  margin-left: 400px;
+  margin-top: 95px;
 }

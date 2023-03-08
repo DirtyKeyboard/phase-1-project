@@ -3,6 +3,7 @@ const submit = document.getElementById("submit");
 const carList = document.getElementById("car-list");
 
 let isFiltering = false;
+let formIsShowing = false;
 
 function fetchCars() {
   fetch("http://localhost:3000/CARS")
@@ -82,7 +83,14 @@ const sellCarBtn = document.querySelector("button#sellb");
 sellCarBtn.addEventListener("click", showForm);
 
 function showForm(e) {
-  submit.innerHTML = "";
+  if (formIsShowing)
+  {
+    submit.innerHTML = "";
+    formIsShowing = false;
+  }
+  else
+  {
+  formIsShowing=true;
   const form = document.createElement("form");
   const h = document.createElement("h3");
   const yearIn = document.createElement("input");
@@ -135,7 +143,7 @@ function showForm(e) {
       contact: contactIn.value,
       sold: false,
     };
-    show.innerHTML = "";
+    submit.innerHTML = "";
     fetch("http://localhost:3000/CARS/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -176,6 +184,7 @@ function showForm(e) {
     submitBtn
   );
   submit.append(form);
+  }
 }
 
 const filter = document.getElementById("filterb");
