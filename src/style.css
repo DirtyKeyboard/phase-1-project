@@ -197,10 +197,7 @@ form {
 }
 
 #footer {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  flex-direction: row;
+  text-align: center;
   margin-top: 150px;
   background-color: rgba(0, 0, 0, 0.678);
 }
@@ -229,11 +226,32 @@ body {
   background: rgba(0, 0, 0, 0.2);
 }
 
-.side-bar-image {
-
-}
-
 .side-bar-image:hover {
   cursor: pointer;
   box-shadow: -5px 10px 5px purple;
+}
+
+.logo {
+  text-align: center;
+  font-style: italic;
+  margin: block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 8vh;
+  color: white;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.motto {
+  text-align: center;
+  font-style: italic;
+  margin: block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2vh;
+  padding-bottom: 15px;
+  color: white;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
 }
