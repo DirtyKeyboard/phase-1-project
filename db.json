@@ -6,6 +6,7 @@
       "make": "Chevrolet",
       "model": "Corvette Stingray",
       "img": "https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/2020-Chevrolet-Corvette-Stingray/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=960",
+      "price": "$75,450",
       "details": "Looking to own a beautiful new Vette?  Want to zoom by everyone and look good while doing it?  If so, this is the perfect car for you.  With 490hp and 465tq, its the perfect power for this light, luxurious, sports car.",
       "contact": "Jack, 818-111-0000",
       "sold": true
@@ -16,9 +17,10 @@
       "make": "Toyota",
       "model": "Supra",
       "img": "https://cdn.motor1.com/images/mgl/PKZQL/s3/1997-toyota-supra-sold-for-176-000-at-auction.webp",
+      "price": "$68,500",
       "details": "King of imports, mint low miles, all stock.  320hp and 280tq.  One of the best imports of its time.",
       "contact": "Billy, 682-333-0202",
-      "sold": true
+      "sold": false
     },
     {
       "id": 3,
@@ -26,6 +28,7 @@
       "make": "Nissan",
       "model": "Skyline",
       "img": "https://www.supercars.net/blog/wp-content/uploads/2016/02/NISSAN-Skyline-GT-R-V-Spec-R34-4041_13-1400x1050.jpg",
+      "price": "$89,000",
       "details": "GODZILLA!!!!!  530hp, 515tq.  Too many mods to list, contact if interested.",
       "contact": "Ashley, 555-111-1234",
       "sold": false
@@ -36,6 +39,7 @@
       "make": "Mazda",
       "model": "RX-7",
       "img": "https://www.jdmbuysell.com/wp-content/uploads/2020/05/Mazda-RX-7.jpg",
+      "price": "$39,000",
       "details": "Look fresh while cruising.  Stock motor but lowered on coils and sitting on TE37 wheels",
       "contact": "Nancy, thisGal@gmail.com",
       "sold": false
@@ -46,6 +50,7 @@
       "make": "Ford",
       "model": "Mustang Shelby",
       "img": "https://www.topgear.com/sites/default/files/images/cars-road-test/carousel/2021/05/e6bb823415c7f730dacfb97fd2407df9/topgear_-_shelby_gt500-_002.jpg?w=976&h=549",
+      "price": "$63,000",
       "details": "Best bang for buck, 760hp, 625tq.  You'll be able to blow by anyone in this car.",
       "contact": "Jared, 417-000-2313",
       "sold": false
@@ -56,6 +61,7 @@
       "make": "Dodge",
       "model": "Challenger SRT",
       "img": "https://s1.cdn.autoevolution.com/images/news/custom-840-hp-dodge-challenger-rs-is-a-two-tone-gloss-satin-murdered-out-demon-196685_1.jpg",
+      "price": "$79,000",
       "details": "POWER!!!!!!  V8 almost 800hp!!!!",
       "contact": "Grandma, 918-222-1324",
       "sold": false
@@ -66,6 +72,7 @@
       "make": "Honda",
       "model": "Civic Type-R",
       "img": "https://di-uploads-pod16.dealerinspire.com/balisehondaofwestwarwick/uploads/2021/03/civic-type-r-ext.png",
+      "price": "$39,500",
       "details": "Speedy, quick, great handler.  30+ MPG for long distance, racing seats, 6spd manual.  Contact for details.",
       "contact": "Lee, LeeIsCool@yahoo.com",
       "sold": false
@@ -76,6 +83,7 @@
       "make": "BMW",
       "model": "M4",
       "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cobb-3movie-180221-1184-1615300284.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*",
+      "price": "$83,000",
       "details": "Germany automotive.  Smiles per Gallon",
       "contact": "Jonny, 687-123-4567",
       "sold": false
@@ -86,6 +94,7 @@
       "make": "Dodge",
       "model": "Viper",
       "img": "https://robbreport.com/wp-content/uploads/2021/01/viper01.jpg?w=1000",
+      "price": "$94,000",
       "details": "One of the greatest american cars made.  Looks amazing, sounds beastly, and a gem.",
       "contact": "Johnny, FastBoy@racecars.com ",
       "sold": false
@@ -96,6 +105,7 @@
       "make": "Toyota",
       "model": "Prius",
       "img": "https://hips.hearstapps.com/hmg-prod/images/2023-toyota-prius-japan-front-three-quarters-1668576156.jpg?crop=1xw:1xh;center,top&resize=980:*",
+      "price": "Call for price",
       "details": "You will never have to worry about how far you can go ever again.  Best car ever!!!!!",
       "contact": "Timmy, 434-444-5555",
       "sold": false
