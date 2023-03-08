@@ -107,6 +107,13 @@ img {
   display: flex;
   align-items: left;
   color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+#car-list h2 
+{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 .scroller {
@@ -229,11 +236,7 @@ body {
   background: rgba(0, 0, 0, 0.2);
 }
 
-.side-bar-image {
-
-}
-
 .side-bar-image:hover {
   cursor: pointer;
-  box-shadow: -5px 10px 5px purple;
+  box-shadow: -5px 10px 5px rgb(80, 0, 80);
 }
