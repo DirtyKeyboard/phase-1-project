@@ -51,14 +51,7 @@ img {
   }
 }
 
-#car-list {
-  padding: 50px;
-  flex: 1;
-  flex-direction: column;
-  display: flex;
-  align-items: left;
-  color: white;
-}
+
 
 .btns {
   display: grid;
@@ -85,13 +78,20 @@ img {
   font-size: 2vh;
 }
 
+#car-list {
+  padding: 50px;
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+  align-items: left;
+  color: white;
+}
 
 .scroller {
   width: 200px;
   height: 800px;
   overflow-y: scroll;
-  scrollbar-color: rebeccapurple green;
-  scrollbar-width: thin;
+  overflow-x: hidden;
 }
 
 input[type="submit"] {
