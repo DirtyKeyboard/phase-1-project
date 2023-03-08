@@ -326,11 +326,6 @@ body {
   color: #fff;
 }
 
-.buy-btn
-{
-
-}
-
 button {
   padding:8px;
   cursor: pointer;
@@ -338,14 +333,33 @@ button {
   font-weight: bold;
 }
 
-
-/*
-button:disabled:hover {
-  
+.buy-btn
+{
+  background-color:rgba(0, 0, 0, 0.644);
+  color:#00fffb;
+  margin-top: 15px;
 }
 
 
-button:disabled {
-
+.buy-btn:hover {
+  transform: scale(1.02);
 }
-*/
+
+.buy-btn:active{
+  background-color:#00fffb91;
+  color:black;
+}
+
+.buy-btn:disabled{
+  color: #00fffb71;
+}
+
+.buy-btn:disabled:hover{
+  transform: scale(1);
+  cursor:default;
+}
+
+.buy-btn:disabled:active{
+  background-color: rgba(0, 0, 0, 0.644);
+  color: #00fffb71;
+}

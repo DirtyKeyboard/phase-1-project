@@ -9,7 +9,7 @@
       "price": "$75,450",
       "details": "Looking to own a beautiful new Vette?  Want to zoom by everyone and look good while doing it?  If so, this is the perfect car for you.  With 490hp and 465tq, its the perfect power for this light, luxurious, sports car.",
       "contact": "Jack, 818-111-0000",
-      "sold": true
+      "sold": false
     },
     {
       "id": 2,
@@ -31,7 +31,7 @@
       "price": "$89,000",
       "details": "GODZILLA!!!!!  530hp, 515tq.  Too many mods to list, contact if interested.",
       "contact": "Ashley, 555-111-1234",
-      "sold": true
+      "sold": false
     },
     {
       "id": 4,
@@ -105,7 +105,7 @@
       "make": "Toyota",
       "model": "Prius",
       "img": "https://hips.hearstapps.com/hmg-prod/images/2023-toyota-prius-japan-front-three-quarters-1668576156.jpg?crop=1xw:1xh;center,top&resize=980:*",
-      "price": "Call for price",
+      "price": "$20,000",
       "details": "You will never have to worry about how far you can go ever again.  Best car ever!!!!!",
       "contact": "Timmy, 434-444-5555",
       "sold": false
