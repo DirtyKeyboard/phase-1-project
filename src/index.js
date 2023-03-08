@@ -64,7 +64,8 @@ function displayCars(cars) {
 
     const buy = document.createElement("button");
     buy.dataset.id = cars.id;
-    buy.className = "fade-in-image";
+    buy.classList.add("fade-in-image");
+    buy.classList.add('buy-btn')
 
     if (cars.sold) {
       buy.innerText = "Sold!";
