@@ -193,7 +193,8 @@ form {
 #footer {
   display:flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: row;
   margin-top: 150px;
+  background-color: rgba(0, 0, 0, 0.678);
 }
