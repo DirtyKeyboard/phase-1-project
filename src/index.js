@@ -37,20 +37,20 @@ function displayCars(cars) {
     carImg.alt = cars.model;
 
     const car = document.createElement("div");
-    car.classList.add("car-name");
     car.innerText = cars.year + " " + cars.make + " " + cars.model;
-    car.id = "car-title"
+    car.id = "car-title";
+
+    const br = document.createElement("br");
 
     const details = document.createElement("p");
     details.innerText = cars.details;
-    details.id = 'car-details'
+    details.id = "car-details";
 
     const br1 = document.createElement("br");
 
     const seller = document.createElement("span");
-    seller.classList.add("seller-info");
     seller.innerText = cars.contact;
-    seller.id = 'car-seller'
+    seller.id = "car-seller";
 
     const br2 = document.createElement("br");
 
@@ -74,7 +74,7 @@ function displayCars(cars) {
       });
     });
 
-    show.append(carImg, car, details, br1, seller, br2, buy);
+    show.append(carImg, car, br, details, br1, seller, br2, buy);
   });
 }
 
