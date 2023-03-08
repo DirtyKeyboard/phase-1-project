@@ -4,17 +4,28 @@ img {
 }
 
 #car-title {
-  font-family: 'Montserrat';font-size: 26px;
+  font-family: "Montserrat";
+  font-size: 26px;
+  display: inline-block;
+  font-size: 2vh;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-#car-details
-{
-  font-family: 'Sono', sans-serif;
+#car-details {
+  font-family: "Sono", sans-serif;
+  display: inline-block;
+  font-size: 2vh;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-#car-seller
-{
-  font-family: 'Labrada', serif;
+#car-seller {
+  font-family: "Labrada", serif;
+  display: inline-block;
+  font-size: 2vh;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .ctr {
@@ -72,28 +83,6 @@ img {
   margin-left: 160px;
   color: white;
   font-size: 2vh;
-  /* background-color: rgba(0, 0, 0, 0.5)*/
-}
-
-.car-name {
-  display: inline-block;
-  font-size: 2.5vh;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-p {
-  display: inline-block;
-  font-size: 2.5vh;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.seller-info {
-  display: inline-block;
-  font-size: 2.5vh;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #submit {
@@ -153,7 +142,7 @@ button {
   transition: all 0.2s ease-in-out 0ms;
   user-select: none;
   /*font-family: "Poppins", sans-serif;*/
-  font-family: 'Sono', sans-serif;
+  font-family: "Sono", sans-serif;
   font-weight: bold;
 }
 
