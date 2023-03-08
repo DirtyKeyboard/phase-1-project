@@ -96,9 +96,6 @@ p {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-#submit {
-  text-align: right;
-}
 
 .scroller {
   width: 200px;
@@ -179,5 +176,11 @@ form {
   color: rgb(247, 242, 242);
   font-size: 2vh;
   font-style: bold;
-  text-align: center;
+  text-align: right;
+}
+
+
+#submit {
+  margin-top: 50px;
+  margin-left: 400px;
 }
