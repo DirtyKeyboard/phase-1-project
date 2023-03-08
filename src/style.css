@@ -111,9 +111,8 @@ img {
   text-align: center;
 }
 
-#car-list h2 
-{
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+#car-list h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .scroller {
@@ -235,8 +234,7 @@ body {
 
 .side-bar-image:hover {
   cursor: pointer;
-<<<<<<< HEAD
-  box-shadow: -5px 10px 5px purple;
+  box-shadow: -5px 10px 5px rgb(80, 0, 80);
 }
 
 .logo {
@@ -263,7 +261,3 @@ body {
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
 }
-=======
-  box-shadow: -5px 10px 5px rgb(80, 0, 80);
-}
->>>>>>> refs/remotes/origin/main
