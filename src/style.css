@@ -3,6 +3,20 @@ img {
   height: auto;
 }
 
+#car-title {
+  font-family: 'Montserrat';font-size: 26px;
+}
+
+#car-details
+{
+  font-family: 'Sono', sans-serif;
+}
+
+#car-seller
+{
+  font-family: 'Labrada', serif;
+}
+
 .ctr {
   text-align: center;
   margin: block;
@@ -138,7 +152,9 @@ button {
   background-color: white;
   transition: all 0.2s ease-in-out 0ms;
   user-select: none;
-  font-family: "Poppins", sans-serif;
+  /*font-family: "Poppins", sans-serif;*/
+  font-family: 'Sono', sans-serif;
+  font-weight: bold;
 }
 
 button:hover {

@@ -39,15 +39,18 @@ function displayCars(cars) {
     const car = document.createElement("div");
     car.classList.add("car-name");
     car.innerText = cars.year + " " + cars.make + " " + cars.model;
+    car.id = "car-title"
 
     const details = document.createElement("p");
     details.innerText = cars.details;
+    details.id = 'car-details'
 
     const br1 = document.createElement("br");
 
     const seller = document.createElement("span");
     seller.classList.add("seller-info");
     seller.innerText = cars.contact;
+    seller.id = 'car-seller'
 
     const br2 = document.createElement("br");
 
