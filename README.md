@@ -7,4 +7,6 @@ Features:
 
 -Filter the car selection by sold/not sold
 
--Create their own listing that gets published to the server
+-Create their own listing.
+
+-All changes are published to a mock server using json-server. (localhost:3000/CARS)
