@@ -51,8 +51,6 @@ img {
   }
 }
 
-
-
 .btns {
   display: grid;
   grid-auto-columns: 1fr;
@@ -92,6 +90,7 @@ img {
   height: 800px;
   overflow-y: scroll;
   overflow-x: hidden;
+  background-color: transparent;
 }
 
 input[type="submit"] {
@@ -166,7 +165,7 @@ form {
   font-size: 2vh;
   font-style: bold;
   text-align: right;
-  margin-right: 70px
+  margin-right: 70px;
 }
 
 #submit {
