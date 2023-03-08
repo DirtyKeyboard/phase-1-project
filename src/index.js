@@ -23,6 +23,7 @@ function displayCars(cars) {
   const img = document.createElement("img");
   img.src = cars.img;
   img.classList.add("img-border");
+  img.classList.add("side-bar-image")
   img.alt = cars.model;
   img.style.height = "115px";
   img.style.width = "200px";

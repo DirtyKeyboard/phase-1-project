@@ -57,6 +57,7 @@ img {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -67,6 +68,7 @@ img {
     text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000,
       0 0 40px #000000, 0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
   }
+
   to {
     text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
       0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
@@ -201,4 +203,37 @@ form {
   flex-direction: row;
   margin-top: 150px;
   background-color: rgba(0, 0, 0, 0.678);
+}
+
+body {
+  overflow: overlay;
+}
+
+.div1 {
+  background: grey;
+  margin-top: 200px;
+  margin-bottom: 20px;
+  height: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.side-bar-image {
+
+}
+
+.side-bar-image:hover {
+  cursor: pointer;
+  box-shadow: -5px 10px 5px purple;
 }
