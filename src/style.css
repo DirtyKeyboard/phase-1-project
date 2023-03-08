@@ -169,10 +169,7 @@ form {
 }
 
 #footer {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  flex-direction: row;
+text-align: center;
   margin-top: 150px;
   background-color: rgba(0, 0, 0, 0.678);
 }
@@ -362,4 +359,29 @@ button {
 .buy-btn:disabled:active{
   background-color: rgba(0, 0, 0, 0.644);
   color: #00fffb71;
+}
+
+.logo {
+  text-align: center;
+  font-style: italic;
+  margin: block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 8vh;
+  color: white;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.motto {
+  text-align: center;
+  font-style: italic;
+  margin: block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2vh;
+  padding-bottom: 15px;
+  color: white;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
 }
