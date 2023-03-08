@@ -100,6 +100,7 @@ function showForm(e) {
     const h = document.createElement("h3");
     const yearIn = document.createElement("input");
     const makeIn = document.createElement("input");
+    const priceIn = document.createElement('input')
     const modelIn = document.createElement("input");
     const imgIn = document.createElement("input");
     const contactIn = document.createElement("input");
@@ -107,6 +108,7 @@ function showForm(e) {
     const br = document.createElement("br");
     const labelYear = document.createElement("label");
     const labelMake = document.createElement("label");
+    const labelPrice = document.createElement("label")
     const labelModel = document.createElement("label");
     const labelImg = document.createElement("label");
     const labelContact = document.createElement("label");
@@ -114,6 +116,7 @@ function showForm(e) {
     const submitBtn = document.createElement("input");
 
     labelYear.textContent = "Year: ";
+    labelPrice.textContent = "Price: $"
     labelMake.textContent = "Make: ";
     labelModel.textContent = "Model: ";
     labelImg.textContent = "Image: ";
@@ -126,6 +129,7 @@ function showForm(e) {
     makeIn.type = "text";
     modelIn.type = "text";
     imgIn.type = "text";
+    priceIn.type = "number";
     contactIn.type = "text";
     detailsIn.type = "text";
     submitBtn.type = "submit";
@@ -134,6 +138,7 @@ function showForm(e) {
     makeIn.classList.add("new-make");
     modelIn.classList.add("new-model");
     imgIn.classList.add("new-image");
+    priceIn.classList.add("new-price")
     contactIn.classList.add("new-contact");
     detailsIn.classList.add("new-details");
 
@@ -144,6 +149,7 @@ function showForm(e) {
         make: makeIn.value,
         model: modelIn.value,
         img: imgIn.value,
+        price: `$${priceIn.value}`,
         details: detailsIn.value,
         contact: contactIn.value,
         sold: false,
@@ -180,6 +186,10 @@ function showForm(e) {
       document.createElement("br"),
       labelContact,
       contactIn,
+      document.createElement("br"),
+      document.createElement("br"),
+      labelPrice,
+      priceIn,
       document.createElement("br"),
       document.createElement("br"),
       labelDetails,
