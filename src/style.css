@@ -3,6 +3,15 @@ img {
   height: auto;
 }
 
+.img-border {
+  border: double 2.5px transparent;
+  border-radius: 30px;
+  background-image: linear-gradient(white, white),
+    linear-gradient(to bottom right, #ff3cac, #562b7c, #2b86c5);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
 #car-title {
   font-family: "Montserrat";
   font-size: 26px;
@@ -38,6 +47,15 @@ img {
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
+}
+
+.fade-in-image {
+  animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 @-webkit-keyframes glow {
@@ -87,7 +105,7 @@ img {
 
 .scroller {
   width: 200px;
-  height: 800px;
+  height: 700px;
   overflow-y: scroll;
   overflow-x: hidden;
   background-color: transparent;
@@ -170,4 +188,12 @@ form {
 
 #submit {
   margin-top: 95px;
+}
+
+#footer {
+  display:flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 150px;
 }

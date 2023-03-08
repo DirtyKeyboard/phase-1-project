@@ -22,6 +22,7 @@ fetchCars();
 function displayCars(cars) {
   const img = document.createElement("img");
   img.src = cars.img;
+  img.classList.add('img-border')
   img.alt = cars.model;
   img.style.height = "115px";
   img.style.width = "200px";
@@ -34,29 +35,35 @@ function displayCars(cars) {
   img.addEventListener("click", () => {
     show.innerText = "";
     const carImg = document.createElement("img");
+    carImg.classList.add('fade-in-image')
+    carImg.classList.add('img-border')
     carImg.src = cars.img;
     carImg.alt = cars.model;
 
     const car = document.createElement("div");
     car.innerText = cars.year + " " + cars.make + " " + cars.model;
     car.id = "car-title";
+    car.className = 'fade-in-image'
 
     const br = document.createElement("br");
 
     const details = document.createElement("p");
     details.innerText = cars.details;
     details.id = "car-details";
+    details.className = 'fade-in-image'
 
     const br1 = document.createElement("br");
 
     const seller = document.createElement("span");
     seller.innerText = cars.contact;
     seller.id = "car-seller";
+    seller.className = 'fade-in-image'
 
     const br2 = document.createElement("br");
 
     const buy = document.createElement("button");
     buy.dataset.id = cars.id;
+    buy.className = 'fade-in-image'
 
     if (cars.sold) {
       buy.innerText = "Sold!";
