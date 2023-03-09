@@ -23,7 +23,7 @@ function displayCars(cars) {
   const img = document.createElement("img");
   img.src = cars.img;
   img.classList.add("img-border");
-  img.classList.add("side-bar-image")
+  img.classList.add("side-bar-image");
   img.alt = cars.model;
   img.style.height = "115px";
   img.style.width = "200px";
@@ -65,7 +65,7 @@ function displayCars(cars) {
     const buy = document.createElement("button");
     buy.dataset.id = cars.id;
     buy.classList.add("fade-in-image");
-    buy.classList.add('buy-btn')
+    buy.classList.add("buy-btn");
 
     if (cars.sold) {
       buy.innerText = "Sold!";
@@ -101,7 +101,7 @@ function showForm(e) {
     const h = document.createElement("h3");
     const yearIn = document.createElement("input");
     const makeIn = document.createElement("input");
-    const priceIn = document.createElement('input')
+    const priceIn = document.createElement("input");
     const modelIn = document.createElement("input");
     const imgIn = document.createElement("input");
     const contactIn = document.createElement("input");
@@ -109,7 +109,7 @@ function showForm(e) {
     const br = document.createElement("br");
     const labelYear = document.createElement("label");
     const labelMake = document.createElement("label");
-    const labelPrice = document.createElement("label")
+    const labelPrice = document.createElement("label");
     const labelModel = document.createElement("label");
     const labelImg = document.createElement("label");
     const labelContact = document.createElement("label");
@@ -117,7 +117,7 @@ function showForm(e) {
     const submitBtn = document.createElement("input");
 
     labelYear.textContent = "Year: ";
-    labelPrice.textContent = "Price: $"
+    labelPrice.textContent = "Price: $";
     labelMake.textContent = "Make: ";
     labelModel.textContent = "Model: ";
     labelImg.textContent = "Image: ";
@@ -139,7 +139,7 @@ function showForm(e) {
     makeIn.classList.add("new-make");
     modelIn.classList.add("new-model");
     imgIn.classList.add("new-image");
-    priceIn.classList.add("new-price")
+    priceIn.classList.add("new-price");
     contactIn.classList.add("new-contact");
     detailsIn.classList.add("new-details");
 
@@ -226,4 +226,46 @@ filter.addEventListener("click", (e) => {
       .then((resp) => resp.json())
       .then((el) => el.forEach(displayCars));
   }
+});
+
+const us = document.querySelector(".logo");
+us.addEventListener("click", () => {
+  show.innerText = "";
+  // if (formIsShowing) {
+  //   show.innerHTML = "";
+  //   formIsShowing = false;
+  // } else {
+  //   formIsShowing = true;
+  const creators = document.createElement("h1");
+  creators.innerText = "WebPage Creators";
+
+  const andrew = document.createElement("h2");
+  andrew.classList.add("one");
+
+  andrew.innerText = "🏁Andrew Hawilew🏁";
+
+  const aInfo = document.createElement("p");
+  aInfo.className = "us";
+  aInfo.innerText =
+    "- I have been a dev for 2 years now and it's my passion to try and learn every concept about coding.";
+
+  const iggy = document.createElement("h2");
+  iggy.className = "two";
+  iggy.innerText = "🔥Iggy Huguet🔥";
+
+  const iInfo = document.createElement("p");
+  iInfo.className = "us";
+  iInfo.innerText =
+    "- As a fellow Dev, I have more experience in HTML and CSS but I am in the process of getting more indepth with Javascript.";
+
+  const tim = document.createElement("h2");
+  tim.className = "three";
+  tim.innerText = "🛞Tim Hoang🛞";
+
+  const tInfo = document.createElement("p");
+  tInfo.className = "us";
+  tInfo.innerText =
+    "- Being the newest member of the group, I am hoping to learn everything I can about coding so I can be a great resource for any newcomer.";
+
+  show.append(creators, andrew, aInfo, iggy, iInfo, tim, tInfo);
 });
