@@ -260,7 +260,7 @@ us.addEventListener("click", () => {
 
   const tim = document.createElement("h2");
   tim.className = "three";
-  tim.innerText = "🛞Tim Hoang🛞";
+  tim.innerText = "🐌Tim Hoang🐌";
 
   const tInfo = document.createElement("p");
   tInfo.className = "us";
