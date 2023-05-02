@@ -1,13 +1,29 @@
 # BOSS: Phase 1 Project
-This application is a online storefront for tuner/muscle cars.
 
-Features: 
+# Instructions
 
--Buy cars
+- Fork and clone the repo
+- In the terminal, run json-server --watch db.json
+- In a new terminal, run index.html
+- Click on a photo of a car for the details
+- Click the "Sell Your Car!" to create a submission
+- Filter the listings by sold
 
--Filter the car selection by sold/not sold
+# Introduction
 
--Create their own listing.
+Welcome to BOSS, the Best One Stop Shop, where you can list and check out other people's rides. This application is an online storefront for tuner/muscle cars. Enjoy the AMAZING rides here and also enjoy the lovely UX designs.
 
--All changes are published to a mock server using json-server. (localhost:3000/CARS)
+### App creators
 
+- Andrew Hawilew
+- Iggy Huguet
+- Tim Hoang
+
+## Conclusion
+
+We built this app 3 weeks into our Flatiron bootcamp course to showcase the use of HTML, Javascript, and CSS. Enjoy our mock car store and check our our code for the UX in our CSS file.
+
+## Resources
+
+- Google
+- Instructor - Antonio Reid
