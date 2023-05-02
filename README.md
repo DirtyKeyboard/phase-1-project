@@ -11,7 +11,7 @@
 
 # Introduction
 
-Welcome to BOSS, the Best One Stop Shop, where you can list and check out other people's rides. This application is an online storefront for tuner/muscle cars. Enjoy the AMAZING rides here and also enjoy the lovely UX designs.
+Welcome to BOSS, the Best One Stop Shop, where you can list and check out other people's rides. This application is an online storefront for tuner/muscle cars. Enjoy the AMAZING rides here and also enjoy the lovely UI designs.
 
 ### App creators
 
@@ -21,7 +21,7 @@ Welcome to BOSS, the Best One Stop Shop, where you can list and check out other 
 
 ## Conclusion
 
-We built this app 3 weeks into our Flatiron bootcamp course to showcase the use of HTML, Javascript, and CSS. Enjoy our mock car store and check our our code for the UX in our CSS file.
+We built this app 3 weeks into our Flatiron bootcamp course to showcase the use of HTML, Javascript, and CSS. Enjoy our mock car store and check our our code for the UI in our CSS file.
 
 ## Resources
 
