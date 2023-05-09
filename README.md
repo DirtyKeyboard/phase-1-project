@@ -4,7 +4,7 @@
 
 - Fork and clone the repo
 - In the terminal, run json-server --watch db.json
-- In a new terminal, run index.html
+- In a new terminal, run open index.html
 - Click on a photo of a car for the details
 - Click the "Sell Your Car!" to create a submission
 - Filter the listings by sold
