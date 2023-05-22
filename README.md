@@ -15,7 +15,7 @@ Welcome to BOSS, the Best One Stop Shop, where you can list and check out other 
 
 ### App creators
 
-- Andrew Hawilew
+- Andrew Hawileh
 - Iggy Huguet
 - Tim Hoang
 
@@ -26,4 +26,4 @@ We built this app 3 weeks into our Flatiron bootcamp course to showcase the use 
 ## Resources
 
 - Google
-- Instructor - Antonio Reid
+- Instructors - Antonio Reid, David Ritchey
